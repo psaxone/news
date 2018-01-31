@@ -2,7 +2,6 @@ var listaID = []
 
 
 $(document).ready(function(){
-    $('#page3').hide()
     var urlSources = 'https://newsapi.org/v2/sources?apiKey=a692b837987549b1bc6d7fdf69e82b38'
    $.get(urlSources, function(response) {
         console.log(response);
@@ -98,6 +97,7 @@ function getBox(name, title, description, url, image) {
 
 function backButtonp2() {
     $('#button-back-p2').click(function() {
+        $('#selection-page2').empty()
         $('#page1').show()
         $('#page2').hide()
         $('#page3').hide()
@@ -106,6 +106,7 @@ function backButtonp2() {
 
 function backButtonp3() {
     $('#button-back-p3').click(function() {
+        $('#articulos').empty()
         $('#page1').hide()
         $('#page2').show()
         $('#page3').hide()

@@ -66,6 +66,10 @@ li.source:hover .source-overlay {
     /* background-color: red */
 }
 
+#page3 {
+    display: none
+}
+
 #div-page2 {
     margin: 0 auto;
     text-align: center;
