@@ -1,4 +1,5 @@
 var listaID = [];
+
 var urlSources = "https://newsapi.org/v2/sources?";
 var iconURL = "https://besticon-demo.herokuapp.com/icon?url=";
 var iconSize = "&size=80..120..200";
@@ -85,7 +86,6 @@ function getIconLi(id, url, name) {
             <div class="source-overlay"><p>${name}</p></div>
         </li>`;
 }
-
 function getBox(name, title, description, url, image) {
   return `<div class="noticia">
             <div class="img-container">
@@ -93,8 +93,8 @@ function getBox(name, title, description, url, image) {
             </div>
             <div class="texto-container">
                 <h1>${name}</h1>
-                <h2>${title}</h2>
-                <h4><i>${description}</i></h4>
+                <h2>${title || ""}</h2>
+                <p><i>${description || ""}</i></p>
                 <a href=${url} target="_blank"><p>More</p></a>
             </div>
         </div>`;
